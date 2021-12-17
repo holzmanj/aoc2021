@@ -1,0 +1,6 @@
+.env
+*.cabal
+dist/
+dist-newstyle/
+inputs/
+result

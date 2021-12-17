@@ -1,0 +1,16 @@
+name: AOC2021
+version: 0.1.0.0
+
+executables:
+  solve:
+    main:           Main.hs
+    source-dirs:    src
+    dependencies:
+      - base >= 4.7 && < 5
+      - bytestring
+      - directory
+      - http-client
+      - http-client-tls
+      - http-types
+
+
