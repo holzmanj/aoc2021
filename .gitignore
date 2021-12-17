@@ -1,5 +1,6 @@
 .env
 *.cabal
+*.swp
 dist/
 dist-newstyle/
 inputs/
