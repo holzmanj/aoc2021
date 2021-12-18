@@ -1,16 +1,17 @@
-{ mkDerivation, base, bytestring, directory, hpack, http-client
-, http-client-tls, http-types, lib, split
+{ mkDerivation, base, bytestring, containers, directory, hpack
+, http-client, http-client-tls, http-types, lib, split
 }:
 mkDerivation {
-  pname = "AOC2021";
-  version = "0.1.0.0";
+  pname = "aoc2021";
+  version = "0.0.0";
   src = ./.;
-  isLibrary = false;
+  isLibrary = true;
   isExecutable = true;
+  libraryHaskellDepends = [ base containers split ];
   libraryToolDepends = [ hpack ];
   executableHaskellDepends = [
-    base bytestring directory http-client http-client-tls http-types
-    split
+    base bytestring containers directory http-client http-client-tls
+    http-types split
   ];
   prePatch = "hpack";
   license = "unknown";

@@ -1,17 +1,23 @@
-name: AOC2021
-version: 0.1.0.0
+name: aoc2021
+
+dependencies:
+  - base >= 4.7 && < 5
+  - split
+  - containers
+
+library:
+  source-dirs: src
 
 executables:
   solve:
     main:           Main.hs
-    source-dirs:    src
+    source-dirs:    app
     dependencies:
-      - base >= 4.7 && < 5
+      - aoc2021
       - bytestring
       - directory
       - http-client
       - http-client-tls
       - http-types
-      - split
 
 
