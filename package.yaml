@@ -12,5 +12,6 @@ executables:
       - http-client
       - http-client-tls
       - http-types
+      - split
 
 
