@@ -12,6 +12,7 @@ import Solutions.Day09
 import Solutions.Day10
 import Solutions.Day11
 import Solutions.Day12
+import Solutions.Day13
 import Solutions.Util
 
 solveDay :: Int -> String -> IO ()
@@ -27,4 +28,5 @@ solveDay 9  = runSolver Solutions.Day09.solver
 solveDay 10 = runSolver Solutions.Day10.solver
 solveDay 11 = runSolver Solutions.Day11.solver
 solveDay 12 = runSolver Solutions.Day12.solver
+solveDay 13 = runSolver Solutions.Day13.solver
 solveDay x  = const $ putStrLn ("No solution for day " ++ show x)
